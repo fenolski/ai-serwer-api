@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 
 app.listen(8888, () => {
-    console.log("App started");
+    console.log("App started!");
 })
 
 app.get('/', (req,res) => {
