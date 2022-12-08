@@ -13,7 +13,7 @@ app.listen(8888, () => {
 app.get('/', (req,res) => {
         res.send("App get")
         exec("ls -la", () => {
-            console.log("Exec triggered")
+            console.log("Get triggered")
             })        
     }
 )
@@ -21,7 +21,7 @@ app.get('/', (req,res) => {
 app.post('/', (req, res) => {
         res.send("App post")
         exec("ls -la", () => {
-            console.log("Exec triggered")
+            console.log("Post triggered")
             })
         res.status(200).end()
     }
